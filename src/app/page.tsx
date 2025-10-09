@@ -1,9 +1,15 @@
 
-// pages/login.tsx
-import LoginCard from "@/components/auth/LoginCard";
+import LoginPage from "@/components/auth/LoginCard"; // Path updated to relative for compatibility
 
-const LoginPage = () => {
-  return <LoginCard />;
-};
+export default function HomePage() {
+  return (
+    <main>
+    
+       
+      <LoginPage />
 
-export default LoginPage;
+      
+    </main>
+  );
+}
+

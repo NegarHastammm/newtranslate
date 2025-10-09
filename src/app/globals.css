@@ -23,3 +23,60 @@
 }
 */
 /* --- 2. Custom Background Image Class --- */
+
+/* app/globals.css */
+
+
+
+.bg {
+  position: absolute;
+  object-fit: contain;
+  
+}
+
+.bg1{
+  
+  top: 44.39px ;
+  left:-320px ;
+  
+  right: 0px;
+  background-size: cover;
+  bottom: 0px;
+  
+
+  
+}
+
+.bg2{
+  
+  top:578.99px ;
+  left: -1px;
+ 
+  right: 240.70px;
+  
+bottom: 578.99px;
+ background-size: cover;
+ 
+}
+
+.bg3{
+  
+  top:811.52px ;
+  left:0px ;
+ right: 505.81px;
+  bottom: 0px;
+  
+   background-size: cover;
+
+}
+.bg4{
+  
+  top:1039.7px ;
+  left:0px ;
+  right: 733.99px;
+  bottom: 1px;
+  
+  background-size: cover;
+ 
+}
+
