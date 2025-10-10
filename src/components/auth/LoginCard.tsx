@@ -12,48 +12,45 @@ const LoginPage: NextPage = () => {
         It has a simple gray background that you can replace with your own image.
         For example: className="min-h-screen bg-cover bg-center" style={{ backgroundImage: "url('/your-background.jpg')" }}
       */}
-      <main className="min-h-screen bg-[#F8F8F8] flex items-center justify-center p-4 font-Shabnam ">
-    <div className="backbg">
-      <div className='bg1 bg'>
-  <Image src="/bg1.png" alt="bg1" width={2560} height={2525.23}  />
-  </div>
-  <div className='bg2 bg'>
-  <Image src="/bg2.png" alt="bg2" width={1440.81} height={1421.26}  />
-</div>
-<div className='bg3 bg'>
-  <Image src="/bg3.png" alt="bg3" width={910.56} height={912.73}  />
-</div>
-<div className='bg4 bg'>
-  <Image src="/bg4.png" alt="bg4" width={454.19} height={456.37}  />
-</div>
-</div>
+      <main className="w-[1920] h-[1156] bg-[#FFFFFF] flex items-center justify-center p-4 font-Shabnam ">
+ 
+
+
 
         {/* This is the card, our rectangular form.
           The card component from DaisyUI is used for a nice look and shadow.
           The card width is full on small screens and limited on larger screens (max-w-sm).
         */}
-        <div className="card  absolute left-1/4 top-1/2 z-50 transform -translate-x-1/2 -translate-y-1/2 p-6 bg-white shadow-xl rounded-lg  ">
+        <div className="card phoneCard flex text-center justify-center bg-[#FFFFFF]  right-[718] bottom-[257]        ">
           <div className="card-body   ">
             
             {/* Logo section */}
-            <div className="flex justify-center mb-6">
+            <div className="flex justify-center ">
               {/* You can place your Next.js Image component or an img tag for the logo here */}
-              <div className="w-32 h-16 rounded-lg bg-gray-200 flex items-center justify-center">
-                <span className="text-gray-500">جای لوگو</span>
+              <div className="    h-[205] w-[337] top-[31] left-[80] flex text-center justify-center ">
+                <span className=" ">
+                  <Image src="/logo.png" alt='logo' width={337} height={205} />
+                </span>
+               
               </div>
             </div>
+             <div className='  flex text-center justify-center logoText text-[#1B2559] '>
+                  <p className=' logoText  '>دستیار هوشمندسازان ترجمه</p>
+                </div>
 
             {/* Mobile number input field */}
-            <div className="form-control w-full">
-              <label className="label" htmlFor="phone-input">
-                <span className="label-text">شماره همراه خود را وارد کنید</span>
+            
+            <div className="form-control relative  ">
+              <label className="label   " htmlFor="phone-input">
+                <span className="label-text phoneNumber">شماره همراه خود را وارد کنید</span>
               </label>
-              <div className="relative">
+              
+              <div className="relative phoneBox">
                 {/* This section displays the Iran country code (+98).
                   It's positioned on the right side of the input using position: absolute.
                 */}
-                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3">
-                  <span className="text-gray-500">+۹۸</span>
+                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3  ">
+                  <span className="">+۹۸</span>
                 </div>
                 {/* Main number input field.
                   Right padding (pr-12) is added to create space for the country code.
@@ -71,11 +68,11 @@ const LoginPage: NextPage = () => {
             </div>
 
             {/* Send SMS button */}
-            <div className="form-control mt-6">
+            <div className="form-control  message ">
               {/* A green button using the btn-success class from DaisyUI.
                 You can change its color with other classes like btn-primary or a custom color with Tailwind.
               */}
-              <button className="btn btn-success text-white">ارسال پیامک</button>
+              <button className=" text-white btn ">ارسال پیامک</button>
             </div>
 
             {/* Login with username link */}

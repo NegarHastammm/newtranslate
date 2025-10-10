@@ -3,6 +3,8 @@
 @plugin "daisyui";
 /* styles/globals.css */
 
+
+
 @font-face {
   font-family: 'Shabnam FD';
   src: url('/fonts/Shabnam-FD.woff2') format('woff2'),
@@ -11,72 +13,150 @@
   font-style: normal;
   font-display: swap; /* Important for performance */
 }
-
-/* Repeat for other weights (e.g., Bold, Medium) if you have them */
-/*
-@font-face {
-  font-family: 'Shabnam FD';
-  src: url('/fonts/Shabnam-FD-Bold.woff2') format('woff2');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
+/* ۱. ارتفاع کل صفحه */
+html, body, #__next {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
-*/
-/* --- 2. Custom Background Image Class --- */
 
-/* app/globals.css */
+/* ۲. main parent */
+.backgrounds {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
 
-
-
+/* ۳. div های بک‌گراند */
 .bg {
-  position: absolute;
-  object-fit: contain;
+  
   
 }
 
-.bg1{
-  
-  top: 44.39px ;
-  left:-320px ;
-  
-  right: 0px;
+/* bg1 */
+.bg1 {
+  top: 2.3px;      /* 44.39 / 1920 * 100 */
+  left: -16.7vw;   /* -320 / 1920 * 100 */
+  width: 133.3vw;  /* 2560 / 1920 * 100 */
+  height: 131.5vw; /* 2525.23 / 1920 * 100 */
   background-size: cover;
-  bottom: 0px;
-  
-
   
 }
 
-.bg2{
-  
-  top:578.99px ;
-  left: -1px;
- 
-  right: 240.70px;
-  
-bottom: 578.99px;
- background-size: cover;
- 
+/* bg2 */
+.bg2 {
+  top: 30.1vw;
+  left: 12.6vw;
+  width: 75vw;
+  height: 74vw;
+  z-index: 30;
 }
 
-.bg3{
-  
-  top:811.52px ;
-  left:0px ;
- right: 505.81px;
-  bottom: 0px;
-  
-   background-size: cover;
-
+/* bg3 */
+.bg3 {
+  top: 42.7vw;
+  left: 26.3vw;
+  width: 47.5vw;
+  height: 26.4vw;
+  z-index: 20;
 }
-.bg4{
+
+/* bg4 */
+.bg4 {
+  top: 54.2vw;
+  left: 38.3vw;
+  width: 23.7vw;
+  height: 23.8vw;
+  z-index: 10;
+}
+
+/* ۴. تصویر داخل div */
+.bg > span {
+  position: absolute !important;
+}
+
+.bg img {
+  object-fit: contain !important;
+}
+
+.phoneCard{
+   position: absolute;      /* برای مرکز کردن نسبت به صفحه */
+                
+  transform: translate(50%, 50%);
   
-  top:1039.7px ;
-  left:0px ;
-  right: 733.99px;
-  bottom: 1px;
-  
+  width: 483px;
+  height: 621px;
+  padding: 16px;
+
+  background-image: url('/bgPhone1.png');
   background-size: cover;
- 
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 1;
+}
+
+.logoText{
+  line-height: 100%;
+  letter-spacing: 0%;
+  width: 700px;
+  height: 19px;
+  top: 241px;
+  left: 130px;
+  
+  font: bold;
+ size: 16px;
+ color: #1B2559;
+}
+
+.phoneNumber{
+  width: 200px;
+  height: 16px;
+  top: 304px;
+  left:270px;
+  
+  
+  
+  font: bold;
+  color: #1B2559;
+  line-height: 100%;
+  letter-spacing: 0%;
+  size: 16px;
+  
+  
+}
+
+.phoneBox{
+  width: 406px;
+  height: 64px;
+  top: 3px;
+  left: -120px ;
+  border-radius: 7px;
+  border: 1px;
+  background-color: #FFFFFF;
+  
+}
+
+.message{
+  width: 406px;
+  height: 49px;
+  top: 446px;
+  left: -120px;
+  
+  border-radius: 7px;
+  border: 1px;
+  background-color: #278760;
 }
 
