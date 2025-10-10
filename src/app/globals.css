@@ -146,17 +146,36 @@ html, body, #__next {
   border-radius: 7px;
   border: 1px;
   background-color: #FFFFFF;
-  
+
 }
 
 .message{
-  width: 406px;
+  width: 200px;
   height: 49px;
-  top: 446px;
-  left: -120px;
+  top: 410px;
+  
+  left: 133px;
   
   border-radius: 7px;
   border: 1px;
   background-color: #278760;
+position: fixed;
+  
+}
+
+.username{
+  width: 700px;
+  height: 16px;
+  top: 539px;
+  left: 130px;
+  font: bold;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #278760;
+  
+  
+  
+  
+  
 }
 
