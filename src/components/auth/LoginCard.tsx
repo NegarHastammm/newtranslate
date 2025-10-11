@@ -10,13 +10,14 @@ const LoginPage: NextPage = () => {
         It has a simple gray background that you can replace with your own image.
         For example: className="min-h-screen bg-cover bg-center" style={{ backgroundImage: "url('/your-background.jpg')" }}
       */}
-      <main className=" font-Shabnam    min-h-screen  overflow-scroll  ">
+      <main className=" font-Shabnam    min-h-screen  overflow-hidden  ">
+        <Image src="/bg1.png" alt='bg1' width={2560} height={2000} className='top-[44.39] left-[-320]' />
         <main className=' '>
-      <Image src="/bgPhone1.png" alt='bgPhone1' width={562.59} height={554.7} className='top-[45] left-[15]  lg:w-[562.59px] lg:h-[554.7px] lg:top-[-59px] lg:left-[390px] lg:fixed   fixed '  />
+      <Image src="/bgPhone1.png" alt='bgPhone1' width={562.59} height={554.7} className='top-[45] left-[15]  lg:w-[483px] lg:h-[596px] lg:top-[53px] lg:left-[560px] lg:fixed   fixed '  />
       
-          <Image src="/bgPhone2.png" alt='bgPhone2' width={316.47} height={311.99} className='top-[200] left-[79] fixed' />
+          <Image src="/bgPhone2.png" alt='bgPhone2' width={316.47} height={311.99} className='top-[200] left-[79] lg:w-[316.47] lg:h-[311.99] lg:top-[190] lg:left-[645] lg:fixed fixed' />
           
-        <Image src="/bgPhone3.png" alt='bgPhone3' width={200.27} height={200.36} className='top-[250] left-[135] fixed' />
+        <Image src="/bgPhone3.png" alt='bgPhone3' width={200.27} height={200.36} className='top-[250] left-[135] lg:w-[200.27] lg:h-[200.36] lg:top-[239] lg:left-[705] lg:fixed fixed' />
         {/* This is the card, our rectangular form.
           The card component from DaisyUI is used for a nice look and shadow.
           The card width is full on small screens and limited on larger screens (max-w-sm).
@@ -32,11 +33,11 @@ const LoginPage: NextPage = () => {
               {/* You can place your Next.js Image component or an img tag for the logo here */}
               <div className=" rounded-lg  flex items-center justify-center ">
                 <span className="">
-                  <Image src="/logo.png" alt='logo' width={337} height={205} className='top-[249] left-[71] fixed' />
+                  <Image src="/logo.png" alt='logo' width={337} height={205} className='top-[249] left-[71] lg:w-[337] lg:h-[205] lg:top-[160] lg:left-[640] lg:fixed fixed' />
                 </span>
            
               </div>
-                     <div className='w-[240] h-[19] top-[450] left-[84] font-bold size-[19] text-[#1B2559] fixed'>
+                     <div className='w-[240] h-[19] top-[450] left-[84] font-bold size-[19] text-[#1B2559] lg:w-[232] lg:h-[19] lg:top-[360] lg:left-[650] lg:fixed fixed'>
               <p>دستیار هوشمندسازان ترجمه</p>
             </div>
             </div>
@@ -45,7 +46,7 @@ const LoginPage: NextPage = () => {
             {/* Mobile number input field */}
             <div className="form-control w-full">
               <label className="label" htmlFor="phone-input">
-                <span className="label-text w-[177] h-[16] top-[700] left-[210] font-bold size-[16] text-[#1B2559] fixed">شماره همراه خود را وارد کنید</span>
+                <span className="label-text w-[177] h-[16] top-[700] left-[210] font-bold size-[16] text-[#1B2559] lg:w-[177] lg:h-[16] lg:top-[410] lg:left-[840] lg:fixed fixed">شماره همراه خود را وارد کنید</span>
               </label>
               <div className="fixed">
                 {/* This section displays the Iran country code (+98).
@@ -61,7 +62,7 @@ const LoginPage: NextPage = () => {
                   id="phone-input"
                   type="tel"
                   placeholder="9123456789"
-                  className="input input-bordered w-[366] h-[62] top-[750] rounded-[7] border-[1] fixed pr-12 "
+                  className="input input-bordered w-[366] h-[62] top-[750] rounded-[7] border-[1] lg:w-[406] lg:h-[62] lg:top-[450] lg:left-[610] lg:fixed fixed pr-12 "
                   maxLength={10}
                   style={{ direction: 'ltr' }}
                 />
@@ -69,17 +70,17 @@ const LoginPage: NextPage = () => {
             </div>
 
             {/* Send SMS button */}
-            <div className="form-control mt-6 bg-[#278760] w-[366] h-[62] top-[810] left-[55] rounded-[7] border-[1] fixed ">
+            <div className="form-control mt-6 bg-[#278760] w-[366] h-[62] top-[810] left-[55] rounded-[7] border-[1] lg:w-[406] lg:h-[62] lg:top-[500] lg:left-[610] lg:fixed fixed ">
               {/* A green button using the btn-success class from DaisyUI.
                 You can change its color with other classes like btn-primary or a custom color with Tailwind.
               */}
-              <button className="flex text-center justify-center w-[350]  items-center top-[850]  text-[#FFFFFF] fixed">ارسال پیامک</button>
+              <button className="flex text-center justify-center w-[350]  items-center top-[850]  text-[#FFFFFF] lg:w-[81] lg:h-[27] lg:top-[540] lg:left-[770] lg:fixed   fixed">ارسال پیامک</button>
             </div>
 
             {/* Login with username link */}
             <div className=" my-4 text-xs"></div>
             <div className="text-center">
-              <a href="#" className="link link-hover text-sm w-[700] h-[16] top-[950] left-[-99] font-bold size-[16] text-[#278760] fixed ">
+              <a href="#" className="link link-hover text-sm w-[700] h-[16] top-[950] left-[-99] font-bold size-[16] text-[#278760] lg:w-[203] lg:h-[16] lg:top-[600] lg:left-[725] lg-fixed fixed ">
                 ورود با نام کاربری و رمز عبور
               </a>
             </div>
